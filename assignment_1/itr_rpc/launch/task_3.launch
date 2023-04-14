@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- upload robot -->
+    <arg name="robot" default="$(find itr_rpc)/robots/2dofplanar.urdf" />
+    <param name="robot_description" textfile="$(arg robot)" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="kinematics_controller" pkg="itr_rpc" type="kinematics_controller.py" output="screen" />
+
+	<arg name="compare" default="false" />
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find itr_rpc)/config/nikolaus.rviz" unless="$(arg compare)"/>
+	<group if="$(arg compare)" ns="upstream">
+		<node pkg="rviz" type="rviz" name="rviz" args="-d $(find itr_rpc)/config/nikolaus_compare.rviz" />
+		<param name="robot_description" command="$(find xacro)/xacro.py '$(find ur_description)/urdf/ur5_robot.urdf.xacro'" />
+		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+				<node name="compare" pkg="itr_rpc" type="compare.py" output="screen">
+    	</node>
+	</group>
+
+	<!-- Nikolaus Map -->
+    <node pkg="tf" type="static_transform_publisher" name="tf_broadcaster" args="-1.6 -1.0 0 0 0 0 base_link map 100" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find itr_rpc)/map/nikolaus.yaml" />
+</launch>

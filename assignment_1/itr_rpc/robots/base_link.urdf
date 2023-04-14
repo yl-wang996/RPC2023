@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="base_link">
+<!-- Links -->
+	<link name="base_link">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="0.11" length="1"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+</robot>

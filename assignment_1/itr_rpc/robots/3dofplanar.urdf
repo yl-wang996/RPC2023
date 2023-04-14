@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<robot name="3dofplanar">
+<!-- Links -->
+	<link name="base_link">
+		<visual>
+			<origin xyz="0 0 0.01" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.2 0.2 0.02"/>
+			</geometry>
+			<material name="cyan">
+				<color rgba="0 1.0 1.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<link name="first_link_cyl">
+		<visual>
+			<origin xyz="0 0 0.0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="0.05" length="0.1"/>
+			</geometry>
+			<material name="magenta">
+				<color rgba="1.0 0.0 1.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+	<link name="first_link_stick">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="1.0 0.05 0.05"/>
+			</geometry>
+			<material name="magenta">
+				<color rgba="1.0 0.0 1.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<link name="second_link_cyl">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="0.05" length="0.1"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="1.0 1.0 0.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+	<link name="second_link_stick">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="1.0 0.05 0.05"/>
+			</geometry>
+			<material name="yellow">
+				<color rgba="1.0 1.0 0.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<link name="third_link_cyl">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="0.05" length="0.1"/>
+			</geometry>
+			<material name="white">
+				<color rgba="1.0 1.0 1.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+	<link name="third_link_stick">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="1.0 0.05 0.05"/>
+			</geometry>
+			<material name="white">
+				<color rgba="1.0 1.0 1.0 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<link name="tcp">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.01 0.01 0.1"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.5 0.5 0.5 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+
+<!-- Fixed -->
+	<joint name="first_cyl_to_stick" type="fixed">
+		<parent link="first_link_cyl"/>
+		<child link="first_link_stick"/>
+		<origin xyz="0.5 0 0"/>
+	</joint>
+	<joint name="second_cyl_to_stick" type="fixed">
+		<parent link="second_link_cyl"/>
+		<child link="second_link_stick"/>
+		<origin xyz="0.5 0 0"/>
+	</joint>
+	<joint name="third_cyl_to_stick" type="fixed">
+		<parent link="third_link_cyl"/>
+		<child link="third_link_stick"/>
+		<origin xyz="0.5 0 0"/>
+	</joint>
+	<joint name="tcp" type="fixed">
+		<parent link="third_link_stick"/>
+		<child link="tcp"/>
+		<origin xyz="0.5 0 -0.02"/>
+	</joint>
+
+<!-- Movables -->
+	<joint name="first_joint" type="revolute">
+		<parent link="base_link"/>
+		<child link="first_link_cyl"/>
+		<origin xyz="0 0 0.07"/>
+		<axis xyz="0 0 1"/>
+		<limit lower="-3.1416" upper="3.1416" effort="0.0" velocity="1.0"/>
+	</joint>
+	<joint name="second_joint" type="revolute">
+		<parent link="first_link_stick"/>
+		<child link="second_link_cyl"/>
+		<origin xyz="0.5 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit lower="-3.1416" upper="3.1416" effort="0.0" velocity="1.0"/>
+	</joint>
+	<joint name="third_joint" type="revolute">
+		<parent link="second_link_stick"/>
+		<child link="third_link_cyl"/>
+		<origin xyz="0.5 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit lower="-3.1416" upper="3.1416" effort="0.0" velocity="1.0"/>
+	</joint>
+</robot>

@@ -1,0 +1,13 @@
+%!TEX options=--shell-escape
+\documentclass[convert={density=100,size=3000x2000,outext=.png}]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds,arrows}
+
+\begin{document}
+\begin{tikzpicture}[background rectangle/.style={fill=white}, show background rectangle]
+  \draw [ultra thick] (2,2) -- (0,0);
+  \draw [ultra thick] (0,2) -- (2,0);
+  \draw [ultra thick] (2,2) -- (0,2);
+  \draw [ultra thick, rounded corners=.1pt] (2,2) -- (2,0) -- (0,0) -- (0,2) -- (1,3.25) -- (2,2) -- (2,0);
+\end{tikzpicture}
+\end{document}
