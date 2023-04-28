@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/KinematicsConfigConfig.h"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/lib/python3/dist-packages/itr_rpc/cfg/KinematicsConfigConfig.py"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/share/itr_rpc/docs/KinematicsConfigConfig-usage.dox"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/share/itr_rpc/docs/KinematicsConfigConfig.dox"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/share/itr_rpc/docs/KinematicsConfigConfig.wikidoc"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/KinematicsConfigConfig.h"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/lib/python3/dist-packages/itr_rpc/cfg/KinematicsConfigConfig.py"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/share/itr_rpc/docs/KinematicsConfigConfig-usage.dox"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/share/itr_rpc/docs/KinematicsConfigConfig.dox"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/share/itr_rpc/docs/KinematicsConfigConfig.wikidoc"
   "CMakeFiles/itr_rpc_gencfg"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /homeL/1wang/ws_rpc/src/itr_rpc
+CMAKE_SOURCE_DIR = /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /homeL/1wang/ws_rpc/build/itr_rpc
+CMAKE_BINARY_DIR = /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc
 
 # Utility rule file for roscpp_generate_messages_eus.
 
@@ -67,6 +67,6 @@ CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 CMakeFiles/roscpp_generate_messages_eus.dir/depend:
-	cd /homeL/1wang/ws_rpc/build/itr_rpc && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /homeL/1wang/ws_rpc/src/itr_rpc /homeL/1wang/ws_rpc/src/itr_rpc /homeL/1wang/ws_rpc/build/itr_rpc /homeL/1wang/ws_rpc/build/itr_rpc /homeL/1wang/ws_rpc/build/itr_rpc/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roscpp_generate_messages_eus.dir/depend
 

@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/homeL/1wang/ws_rpc/devel/.private/catkin_tools_prebuild}
+: ${_CATKIN_SETUP_DIR:=/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/catkin_tools_prebuild}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

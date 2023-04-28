@@ -1,8 +1,8 @@
-prefix=/homeL/1wang/ws_rpc/devel/.private/itr_rpc
+prefix=/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc
 
 Name: itr_rpc
 Description: Description of itr_rpc
 Version: 0.0.0
-Cflags: -I/homeL/1wang/ws_rpc/devel/.private/itr_rpc/include
+Cflags: -I/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/include
 Libs: -L${prefix}/lib 
 Requires: roscpp rospy sensor_msgs std_msgs tf message_runtime dynamic_reconfigure

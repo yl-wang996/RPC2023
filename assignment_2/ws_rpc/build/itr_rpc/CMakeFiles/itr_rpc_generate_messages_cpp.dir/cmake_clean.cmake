@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/FK_Control.h"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/IK_Solve.h"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/LineCollision.h"
-  "/homeL/1wang/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/PointCollision.h"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/FK_Control.h"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/IK_Solve.h"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/LineCollision.h"
+  "/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc/include/itr_rpc/PointCollision.h"
   "CMakeFiles/itr_rpc_generate_messages_cpp"
 )
 

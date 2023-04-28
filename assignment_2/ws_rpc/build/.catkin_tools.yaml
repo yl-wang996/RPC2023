@@ -1,6 +1,6 @@
-devel_space: /homeL/1wang/ws_rpc/devel
+devel_space: /homeL/1wang/RPC2023/assignment_2/ws_rpc/devel
 install: false
-install_space: /homeL/1wang/ws_rpc/install
+install_space: /homeL/1wang/RPC2023/assignment_2/ws_rpc/install
 profile: default
-source_space: /homeL/1wang/ws_rpc/src
-workspace: /homeL/1wang/ws_rpc
+source_space: /homeL/1wang/RPC2023/assignment_2/ws_rpc/src
+workspace: /homeL/1wang/RPC2023/assignment_2/ws_rpc

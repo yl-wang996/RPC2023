@@ -1,4 +1,4 @@
-prefix=/homeL/1wang/ws_rpc/devel/.private/catkin_tools_prebuild
+prefix=/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

@@ -67,14 +67,14 @@ set(itr_rpc_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(itr_rpc_SOURCE_PREFIX /homeL/1wang/ws_rpc/src/itr_rpc)
-  set(itr_rpc_DEVEL_PREFIX /homeL/1wang/ws_rpc/devel/.private/itr_rpc)
+  set(itr_rpc_SOURCE_PREFIX /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc)
+  set(itr_rpc_DEVEL_PREFIX /homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/.private/itr_rpc)
   set(itr_rpc_INSTALL_PREFIX "")
   set(itr_rpc_PREFIX ${itr_rpc_DEVEL_PREFIX})
 else()
   set(itr_rpc_SOURCE_PREFIX "")
   set(itr_rpc_DEVEL_PREFIX "")
-  set(itr_rpc_INSTALL_PREFIX /homeL/1wang/ws_rpc/install)
+  set(itr_rpc_INSTALL_PREFIX /homeL/1wang/RPC2023/assignment_2/ws_rpc/install)
   set(itr_rpc_PREFIX ${itr_rpc_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /homeL/1wang/ws_rpc/install/lib;/homeL/1wang/ws_rpc/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /homeL/1wang/RPC2023/assignment_2/ws_rpc/install/lib;/homeL/1wang/RPC2023/assignment_2/ws_rpc/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

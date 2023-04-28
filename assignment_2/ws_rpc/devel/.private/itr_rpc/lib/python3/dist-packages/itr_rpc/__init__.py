@@ -6,7 +6,7 @@ from os import path as os_path
 from pkgutil import extend_path
 from sys import path as sys_path
 
-__extended_path = '/homeL/1wang/ws_rpc/src/itr_rpc/src'.split(';')
+__extended_path = '/homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc/src'.split(';')
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /homeL/1wang/ws_rpc/src/itr_rpc
+CMAKE_SOURCE_DIR = /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /homeL/1wang/ws_rpc/build/itr_rpc
+CMAKE_BINARY_DIR = /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /homeL/1wang/ws_rpc/build/itr_rpc
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /homeL/1wang/ws_rpc/build/itr_rpc/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /homeL/1wang/ws_rpc/build/itr_rpc && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /homeL/1wang/ws_rpc/src/itr_rpc /homeL/1wang/ws_rpc/src/itr_rpc /homeL/1wang/ws_rpc/build/itr_rpc /homeL/1wang/ws_rpc/build/itr_rpc /homeL/1wang/ws_rpc/build/itr_rpc/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

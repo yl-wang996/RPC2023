@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /homeL/1wang/ws_rpc/src/itr_rpc
+CMAKE_SOURCE_DIR = /homeL/1wang/RPC2023/assignment_2/ws_rpc/src/itr_rpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /homeL/1wang/ws_rpc/build/itr_rpc
+CMAKE_BINARY_DIR = /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /homeL/1wang/ws_rpc/build/itr_rpc/CMakeFiles /homeL/1wang/ws_rpc/build/itr_rpc/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/CMakeFiles /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /homeL/1wang/ws_rpc/build/itr_rpc/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/homeL/1wang/ws_rpc/install")
+  set(CMAKE_INSTALL_PREFIX "/homeL/1wang/RPC2023/assignment_2/ws_rpc/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/homeL/1wang/ws_rpc/build/itr_rpc/gtest/googlemock/cmake_install.cmake")
+  include("/homeL/1wang/RPC2023/assignment_2/ws_rpc/build/itr_rpc/gtest/googlemock/cmake_install.cmake")
 
 endif()
 
