@@ -1,0 +1,1 @@
+/homeL/1wang/ws_rpc/devel/.private/itr_rpc/share/roseus/ros/itr_rpc/srv/IK_Solve.l

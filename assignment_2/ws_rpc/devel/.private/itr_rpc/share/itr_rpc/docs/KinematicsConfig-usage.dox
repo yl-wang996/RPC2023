@@ -1,0 +1,13 @@
+\subsubsection usage Usage
+\verbatim
+<node name="itr_rpc" pkg="itr_rpc" type="itr_rpc">
+  <param name="limit_velocity" type="bool" value="True" />
+  <param name="pos_x_err" type="double" value="0.001" />
+  <param name="pos_y_err" type="double" value="0.001" />
+  <param name="pos_z_err" type="double" value="0.001" />
+  <param name="orient_x_err" type="double" value="6.5" />
+  <param name="orient_y_err" type="double" value="6.5" />
+  <param name="orient_z_err" type="double" value="6.5" />
+</node>
+\endverbatim
+
