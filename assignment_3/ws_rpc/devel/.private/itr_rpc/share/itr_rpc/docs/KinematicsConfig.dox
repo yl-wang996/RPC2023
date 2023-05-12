@@ -1,0 +1,12 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~limit_velocity" : \b [bool] Obey URDF joint velocity limits min: False, default: True, max: True
+- \b "~pos_x_err" : \b [double] Position error x for IK solver min: 0.0, default: 0.001, max: 0.1
+- \b "~pos_y_err" : \b [double] Position error y for IK solver min: 0.0, default: 0.001, max: 0.1
+- \b "~pos_z_err" : \b [double] Position error z for IK solver min: 0.0, default: 0.001, max: 0.1
+- \b "~orient_x_err" : \b [double] Orientation error x for IK solver min: 0.0, default: 6.5, max: 7.0
+- \b "~orient_y_err" : \b [double] Orientation error y for IK solver min: 0.0, default: 6.5, max: 7.0
+- \b "~orient_z_err" : \b [double] Orientation error z for IK solver min: 0.0, default: 6.5, max: 7.0
+

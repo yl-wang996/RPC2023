@@ -1,0 +1,11 @@
+# Header must contain time stamp
+Header header
+
+# Target line between two points start and goal
+float32[3] start
+float32[3] goal
+
+---
+
+# Return true if configuration is possible (grid cells on the line unoccupied)
+bool free

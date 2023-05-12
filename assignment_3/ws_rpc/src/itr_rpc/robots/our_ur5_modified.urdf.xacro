@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="our_ur5">
+
+<xacro:property name="radius" value="0.08" />
+<!-- <xacro:property name="" value="${pi/2}" /> -->
+
+
+<!-- <robot name="our_ur5"> -->
+<!-- Links -->
+
+	<link name="base_link"></link>
+
+	<joint name="base_joint" type="revolute">
+		<parent link="base_link"/>
+		<child link="base"/>
+		<axis xyz="0.0 0.0 1"/>	
+		<limit lower="-${2*pi}" upper="${2*pi}" effort="100.0" velocity="3.15"/>
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+	</joint>
+
+	<link name="base">
+		<visual>
+			<origin xyz="0 0 0.1" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="${radius}" length="0.2"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<joint name="base_shoulder" type="revolute">
+		<parent link="base"/>
+		<child link="shoulder"/>
+		<axis xyz="0.0 1 0.0"/>	
+		<limit lower="-${2*pi}" upper="${2*pi}" effort="100.0" velocity="3.15"/>
+		<origin rpy="0 0 0" xyz="0 -${radius*2} 0.0892"/>
+	</joint>
+
+	<link name="shoulder">
+		<visual>
+			<origin xyz="0 0 ${0.5/2}" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="${radius}" length="0.5"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<joint name="shoulder_elbow" type="revolute">
+		<parent link="shoulder"/>
+		<child link="elbow"/>
+		<axis xyz="0.0 1 0.0"/>	
+		<limit lower="-${pi}" upper="${pi}" effort="100.0" velocity="3.15"/>
+		<origin rpy="0 0 0" xyz="0 ${radius*2} 0.425"/>
+	</joint>
+
+
+
+	<link name="elbow">
+		<visual>
+			<origin xyz="0 0 ${0.392/2}" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="${radius}" length="0.392"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+
+	<joint name="elbow_wrist1" type="revolute">
+		<parent link="elbow"/>
+		<child link="wrist1"/>
+		<axis xyz="0.0 1 0.0"/>	
+		<limit lower="-${2*pi}" upper="${2*pi}" effort="100" velocity="3.2"/>
+		<origin rpy="0 0 0" xyz="0 0 0.392"/>
+	</joint>
+
+	<link name="wrist1">
+		<visual>
+			<origin xyz="0 0.05 0" rpy="${pi/2} 0 0"/>
+			<geometry>
+				<cylinder radius="${radius}" length="${radius*3}"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<joint name="wrist1_wrist2" type="revolute">
+		<parent link="wrist1"/>
+		<child link="wrist2"/>
+		<axis xyz="0.0 0.0 1"/>	
+			<limit lower="-${2*pi}" upper="${2*pi}" effort="100" velocity="3.2"/>
+		<origin rpy="0 0 0" xyz="0 -0.1093 0"/>
+	</joint>
+
+
+	<link name="wrist2">
+		<visual>
+			<origin xyz="0 0 -${radius}" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="${radius}" length="${radius*4}"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+	<joint name="wrist2_wrist3" type="revolute">
+		<parent link="wrist2"/>
+		<child link="wrist3"/>
+		<axis xyz="0.0 0 1"/>	
+		<limit lower="-${2*pi}" upper="${2*pi}" effort="100" velocity="3.2"/>
+		<origin rpy="${pi/2} 0 0" xyz="0 -0.0825 0.09475"/>
+	</joint>
+
+	<link name="wrist3">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder radius="${radius}" length="${radius}"/>
+			</geometry>
+			<material name="gray">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+	</link>
+
+
+
+</robot>

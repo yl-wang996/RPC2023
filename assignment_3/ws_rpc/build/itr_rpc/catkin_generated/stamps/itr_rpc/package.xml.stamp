@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <name>itr_rpc</name>
+  <version>0.0.0</version>
+  <description>Robot Simulator for Introduction to Robotics Module</description>
+
+  <maintainer email="einig@informatik.uni-hamburg.de">Lasse Einig</maintainer>
+  <license>AFLv3</license>
+  <!-- <url type="website">http://wiki.ros.org/2dof</url> -->
+  <author email="2hartfil@informatik.uni-hamburg.de">Judith Hartfill</author>
+  <author email="einig@informatik.uni-hamburg.de">Lasse Einig</author>
+
+
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>urdfdom_py</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>map_server</build_depend>
+  <build_depend>trac_ik_python</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>urdfdom_py</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>map_server</run_depend>
+  <run_depend>trac_ik_python</run_depend>
+</package>

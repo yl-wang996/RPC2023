@@ -1,0 +1,12 @@
+image: nikolaus.png
+#resolution: 0.001 #original scaling
+#origin: [0.945, 0.0, 0.0] # original origin
+#resolution: 0.0009
+#origin: [1.0105, 0.15, 0.0]
+#resolution: 0.0008
+#origin: [1.076, 0.25, 0.0]
+resolution: 0.0007
+origin: [1.1415, 0.35, 0.0]
+occupied_thresh: 0.5
+free_thresh: 0.5
+negate: 0

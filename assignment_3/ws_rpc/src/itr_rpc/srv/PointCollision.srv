@@ -1,0 +1,10 @@
+# Header must contain time stamp
+Header header
+
+# Target position
+float32[3] position
+
+---
+
+# Return true if configuration is possible (grid cell unoccupied)
+bool free

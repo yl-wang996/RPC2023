@@ -1,0 +1,17 @@
+# Header must contain time stamp
+Header header
+
+# Target position (x, y, z)
+float32[3] position
+# Target orientation (roll, pitch, yaw)
+float32[3] orientation
+
+# Seed values for the IK solver
+# Can be empty -> single random value for all joints
+# Can be the number of joints -> specific value for each joint
+float32[] seed
+
+---
+
+# Return possible configuration for reaching position
+float32[] configuration

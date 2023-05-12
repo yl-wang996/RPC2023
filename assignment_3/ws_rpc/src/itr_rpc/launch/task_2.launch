@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="compare" default="false" />
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find itr_rpc)/config/basic.rviz" unless="$(arg compare)"/>
+	<group if="$(arg compare)" ns="upstream">
+		<node pkg="rviz" type="rviz" name="rviz" args="-d $(find itr_rpc)/config/basic_compare.rviz" />
+		<param name="robot_description" command="$(find xacro)/xacro '$(find ur_description)/urdf/ur5_robot.urdf.xacro'" />
+		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+				<node name="compare" pkg="itr_rpc" type="compare.py" output="screen">
+    	</node>
+	</group>
+
+</launch>
